@@ -1,16 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package org.nescent.persttest1;
+package org.nescent.persttest;
 import org.garret.perst.*;
 
 /**
  *
- * @author dan
+ * @author Dan Leehr (dan.leehr@nescent.org)
  */
 public class PerstTester {
-    Storage storage;
+        Storage storage;
         public PerstTester() {
         SimplePersistent rootObject = new SimplePersistent();
         StorageFactory sf = StorageFactory.getInstance();
@@ -23,7 +19,6 @@ public class PerstTester {
         this.storage.endThreadTransaction();
     }
     public void testReadNoCatch(boolean fail) {
-        // get a
         this.storage.beginThreadTransaction(Storage.READ_ONLY_TRANSACTION);
         SimplePersistent rootObject = (SimplePersistent) this.storage.getRoot();
         rootObject.SimpleOperation(fail);

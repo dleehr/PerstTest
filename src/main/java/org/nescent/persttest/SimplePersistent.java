@@ -1,14 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package org.nescent.persttest1;
+package org.nescent.persttest;
 
 import org.garret.perst.Persistent;
 
 /**
  *
- * @author dan
+ * @author Dan Leehr (dan.leehr@nescent.org)
  */
 public class SimplePersistent extends Persistent {
 
