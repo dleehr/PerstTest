@@ -18,6 +18,6 @@ public class SimplePersistent extends Persistent {
 
     private void PrintLength(String s) {
         int length = s.length();
-        System.out.println("Length of string is s");
+        System.out.println("Length of string is: " + length);
     }
 }
